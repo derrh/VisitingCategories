@@ -29,7 +29,7 @@ Now for `UIView` and each of it's subclasses, implement the `acceptVisitor:`.
 You should provide an implementation of this category for each `visit___:` method you provide in your `ViewVisitor` class. If you don't provide an implementation for a particular `UIView` subclass then it's nearest parent class's implementation of the `AcceptsViewVisitor` will invoke that parent class's associated `visit___:` method. For example if you provide a `visitScrollView:` method and implement the `AcceptsViewVisitor` category for `UIScrollView`, then calling `acceptVisitor:` on a `UITableView` will result in `visitScrollView:` being called on your visitor with that `UITableView` instance.
 
 
-**Paying a Visit***
+**Paying a Visit**
 
 Now you can pass your useful subclass of `ViewVisitor` and pass an instance to each of the views you would like to visit.
 
