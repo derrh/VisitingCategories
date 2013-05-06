@@ -7,23 +7,13 @@
 //
 
 #import "DHViewController.h"
-
-@interface DHViewController ()
-
-@end
+#import "DHBlueVisitor.h"
+#import "UIView+AppearanceVisitor.h"
 
 @implementation DHViewController
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
++ (void)initialize {
+    [[UIView appearanceWhenContainedIn:self, nil] setAppearanceVisitor:[DHBlueVisitor new]];
 }
 
 @end

@@ -18,6 +18,10 @@
 		491CECA217381EB200F08328 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 491CECA117381EB200F08328 /* Default-568h@2x.png */; };
 		491CECA517381EB200F08328 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 491CECA317381EB200F08328 /* MainStoryboard.storyboard */; };
 		491CECA817381EB200F08328 /* DHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 491CECA717381EB200F08328 /* DHViewController.m */; };
+		491CECB117381F7400F08328 /* DHViewVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 491CECB017381F7400F08328 /* DHViewVisitor.m */; };
+		491CECB4173821F800F08328 /* UIView+AppearanceVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 491CECB3173821F800F08328 /* UIView+AppearanceVisitor.m */; };
+		491CECB71738227D00F08328 /* DHBlueVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 491CECB61738227D00F08328 /* DHBlueVisitor.m */; };
+		491CECB91738259E00F08328 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 491CECB81738259E00F08328 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +41,13 @@
 		491CECA417381EB200F08328 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		491CECA617381EB200F08328 /* DHViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DHViewController.h; sourceTree = "<group>"; };
 		491CECA717381EB200F08328 /* DHViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DHViewController.m; sourceTree = "<group>"; };
+		491CECAF17381F7400F08328 /* DHViewVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHViewVisitor.h; sourceTree = "<group>"; };
+		491CECB017381F7400F08328 /* DHViewVisitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHViewVisitor.m; sourceTree = "<group>"; };
+		491CECB2173821F800F08328 /* UIView+AppearanceVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AppearanceVisitor.h"; sourceTree = "<group>"; };
+		491CECB3173821F800F08328 /* UIView+AppearanceVisitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AppearanceVisitor.m"; sourceTree = "<group>"; };
+		491CECB51738227D00F08328 /* DHBlueVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHBlueVisitor.h; sourceTree = "<group>"; };
+		491CECB61738227D00F08328 /* DHBlueVisitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHBlueVisitor.m; sourceTree = "<group>"; };
+		491CECB81738259E00F08328 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				491CECB91738259E00F08328 /* QuartzCore.framework in Frameworks */,
 				491CEC8C17381EB200F08328 /* UIKit.framework in Frameworks */,
 				491CEC8E17381EB200F08328 /* Foundation.framework in Frameworks */,
 				491CEC9017381EB200F08328 /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +85,7 @@
 		491CEC8A17381EB200F08328 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				491CECB81738259E00F08328 /* QuartzCore.framework */,
 				491CEC8B17381EB200F08328 /* UIKit.framework */,
 				491CEC8D17381EB200F08328 /* Foundation.framework */,
 				491CEC8F17381EB200F08328 /* CoreGraphics.framework */,
@@ -83,6 +96,7 @@
 		491CEC9117381EB200F08328 /* VisitingCategories */ = {
 			isa = PBXGroup;
 			children = (
+				491CECAE17381F5800F08328 /* VisitingCategories */,
 				491CEC9A17381EB200F08328 /* DHAppDelegate.h */,
 				491CEC9B17381EB200F08328 /* DHAppDelegate.m */,
 				491CECA317381EB200F08328 /* MainStoryboard.storyboard */,
@@ -105,6 +119,19 @@
 				491CECA117381EB200F08328 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		491CECAE17381F5800F08328 /* VisitingCategories */ = {
+			isa = PBXGroup;
+			children = (
+				491CECAF17381F7400F08328 /* DHViewVisitor.h */,
+				491CECB017381F7400F08328 /* DHViewVisitor.m */,
+				491CECB2173821F800F08328 /* UIView+AppearanceVisitor.h */,
+				491CECB3173821F800F08328 /* UIView+AppearanceVisitor.m */,
+				491CECB51738227D00F08328 /* DHBlueVisitor.h */,
+				491CECB61738227D00F08328 /* DHBlueVisitor.m */,
+			);
+			name = VisitingCategories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +204,9 @@
 				491CEC9817381EB200F08328 /* main.m in Sources */,
 				491CEC9C17381EB200F08328 /* DHAppDelegate.m in Sources */,
 				491CECA817381EB200F08328 /* DHViewController.m in Sources */,
+				491CECB117381F7400F08328 /* DHViewVisitor.m in Sources */,
+				491CECB4173821F800F08328 /* UIView+AppearanceVisitor.m in Sources */,
+				491CECB71738227D00F08328 /* DHBlueVisitor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
